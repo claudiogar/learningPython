@@ -1,6 +1,6 @@
 # This file is used to run scripts that require the importing of modules
 from data_structures import linkedList as ds
-from problems import e2_5_sumLists as pb
+from problems.ctci import e2_5_sumLists as pb
 
 
 i = ds.List()
