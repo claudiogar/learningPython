@@ -8,8 +8,7 @@ class List:
         self.head = None
         self.tail = None
 
-    def append(self, e) -> Node:
-        node = Node(e)
+    def appendNode(self, node:Node) -> Node:
         if self.head is None:
             self.head = node
             self.tail = node
@@ -17,7 +16,11 @@ class List:
             self.tail.next = node
             self.tail = node
         return node
-    
+
+    def append(self, e) -> Node:
+        node = Node(e)
+        return self.appendNode(node)
+
     def count(self):
         i = 0
         n = Node(0)
