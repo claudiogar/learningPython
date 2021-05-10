@@ -1,11 +1,34 @@
 # This file is used to run scripts that require the importing of modules
-from problems.ctci import e3_2_stackMin as pb
+from problems.ctci import e3_3_stackOfPlates as pb
 
-stack = pb.Stack()
+s = pb.StackOfPlates()
 
-stack.push(4)
-stack.push(2)
-stack.push(3)
-stack.push(1)
+s.push(1)
+s.push(2)
+s.push(3)
+s.push(4)
+s.push(5)
+s.push(6)
 
-print(stack.min())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.list.count())
+
+s.push(1)
+s.push(2)
+s.push(3)
+s.push(4)
+s.push(5)
+s.push(6)
+
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s.list.count())

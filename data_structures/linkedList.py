@@ -8,6 +8,9 @@ class List:
         self.head = None
         self.tail = None
 
+    def __len__(self):
+        return self.count()
+    
     def appendNode(self, node:Node) -> Node:
         if self.head is None:
             self.head = node
