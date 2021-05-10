@@ -1,22 +1,7 @@
 # This file is used to run scripts that require the importing of modules
-from problems.ctci import e3_3_stackOfPlates as pb
+from problems.ctci import e3_4_queueWithStacks as pb
 
-s = pb.StackOfPlates()
-
-s.push(1)
-s.push(2)
-s.push(3)
-s.push(4)
-s.push(5)
-s.push(6)
-
-print(s.pop())
-print(s.pop())
-print(s.pop())
-print(s.pop())
-print(s.pop())
-print(s.pop())
-print(s.list.count())
+s = pb.MyQueue()
 
 s.push(1)
 s.push(2)
@@ -31,4 +16,5 @@ print(s.pop())
 print(s.pop())
 print(s.pop())
 print(s.pop())
-print(s.list.count())
+print(len(s.s1))
+print(len(s.s2))
